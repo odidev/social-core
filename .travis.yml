@@ -1,5 +1,10 @@
 language: python
 sudo: false
+notifications:
+  email: false
+arch:
+  - amd64
+  - arm64
 matrix:
   include:
     - python: 2.7
