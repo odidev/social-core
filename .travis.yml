@@ -2,15 +2,14 @@ language: python
 sudo: false
 notifications:
   email: false
-arch:
-  - amd64
-  - arm64
 matrix:
   include:
     - python: 2.7
     - python: 3.5
     - python: 3.6
     - python: 3.7
+    - arch: arm64
+      python: 3.7
   fast_finish: true
 addons:
   apt:
